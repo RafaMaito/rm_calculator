@@ -1,0 +1,96 @@
+body {
+  background-color: darkblue;
+  margin: 0;
+}
+
+header {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Nome calculadora */
+#titulo {
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  width: 30vw;
+  height: 60px;
+  margin-bottom: 10px;
+  background-color: blueviolet;
+  border-radius: 10px;
+  color: white;
+  padding-top: 30px;
+  font-size: 2vw;
+}
+
+main {
+  height: 80vh;
+}
+
+/* Div calculadora */
+#calculadora {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  border: 2px solid black;
+  padding: 7px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+/* Div display */
+#displayNumber {
+  margin-top: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  background-color: orange;
+}
+
+/* Div teclado */
+#keyboardNumbers {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+/* Botões teclado */
+.numberButton {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+/* Cores botões */
+.colorButton {
+  background-color: greenyellow;
+}
+
+.colorButtonHard {
+  background-color: grey;
+}
+
+/* Footer */
+
+footer {
+  height: 5vh;
+  width: 100vw;
+  bottom: 0;
+  font-size: 1.1rem;
+  color: #ccc;
+  background: #3c4041;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

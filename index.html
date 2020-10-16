@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="titulo">RM's Calculator</h1>
+    </header>
+    <main>
+      <div id="calculadora">
+        <div id="display">
+          <input type="text" id="displayNumber" disabled />
+        </div>
+        <div id="keyboardNumbers">
+          <button
+            id="cleanButton"
+            class="numberButton colorButtonHard"
+            onclick="cleanDisplay()"
+          >
+            AC
+          </button>
+          <button
+            id="radicButton"
+            class="numberButton colorButtonHard"
+            onclick="calcNumbers(5)"
+          >
+            &radic;
+          </button>
+          <button
+            id="moduleButton"
+            class="numberButton colorButtonHard"
+            onclick="calcNumbers(6)"
+          >
+            %
+          </button>
+          <button
+            id="divideButton"
+            class="numberButton colorButton"
+            onclick="calcNumbers(1)"
+            value="/"
+          >
+            &divide;
+          </button>
+          <button
+            id="buttonOne"
+            class="numberButton"
+            onclick="addNumber(`buttonOne`)"
+            value="1"
+          >
+            1
+          </button>
+          <button
+            id="buttonTwo"
+            class="numberButton"
+            onclick="addNumber(`buttonTwo`)"
+            value="2"
+          >
+            2
+          </button>
+          <button
+            id="buttonThree"
+            class="numberButton"
+            onclick="addNumber(`buttonThree`)"
+            value="3"
+          >
+            3
+          </button>
+          <button
+            id="timesButton"
+            class="numberButton colorButton"
+            value="*"
+            onclick="calcNumbers(2)"
+          >
+            &times;
+          </button>
+          <button
+            id="buttonFour"
+            class="numberButton"
+            onclick="addNumber(`buttonFour`)"
+            value="4"
+          >
+            4
+          </button>
+          <button
+            id="buttonFive"
+            class="numberButton"
+            onclick="addNumber(`buttonFive`)"
+            value="5"
+          >
+            5
+          </button>
+          <button
+            id="buttonSix"
+            class="numberButton"
+            onclick="addNumber(`buttonSix`)"
+            value="6"
+          >
+            6
+          </button>
+          <button
+            id="buttonLess"
+            class="numberButton colorButton"
+            value="-"
+            onclick="calcNumbers(3)"
+          >
+            -
+          </button>
+          <button
+            id="buttonSeven"
+            class="numberButton"
+            onclick="addNumber(`buttonSeven`)"
+            value="7"
+          >
+            7
+          </button>
+          <button
+            id="buttonEight"
+            class="numberButton"
+            onclick="addNumber(`buttonEight`)"
+            value="8"
+          >
+            8
+          </button>
+          <button
+            id="buttonNine"
+            class="numberButton"
+            onclick="addNumber(`buttonNine`)"
+            value="9"
+          >
+            9
+          </button>
+          <button
+            id="buttonPlus"
+            class="numberButton colorButton"
+            value="\+"
+            onclick="calcNumbers(4)"
+          >
+            +
+          </button>
+          <button
+            id="buttonPlusLess"
+            class="numberButton colorButtonHard"
+            onclick="positiveNegative()"
+          >
+            +/-
+          </button>
+          <button
+            id="buttonZero"
+            class="numberButton"
+            onclick="addNumber(`buttonZero`)"
+            value="0"
+          >
+            0
+          </button>
+          <button id="buttonDot" class="numberButton" onclick="dot()" value=".">
+            .
+          </button>
+          <button
+            id="ButtonEqual"
+            class="numberButton colorButton"
+            onclick="equal()"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Project by Rafael Maito</p>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
